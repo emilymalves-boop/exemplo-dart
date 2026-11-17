@@ -1,0 +1,29 @@
+void main() {
+  int a = 17;
+  int b = 5;
+
+  print(a + b);
+  print(a - b);
+  print(a * b);
+  print(a / b);
+  print(a ~/ b);
+  print(a % b);
+}
+
+//condicionais
+//igual == / diferete
+//maior que > / menor que <
+//maior ou igual >= / menor ou igual <=
+//&& - operador e (and)
+//|| - operador ou
+//!- operador não
+
+double media = 6.5;
+
+if (media >= '/'){
+  print("aprovado");
+} else if (media >= 5 ){
+  print("recuperação");
+} else {
+  print("reprovado");
+}
