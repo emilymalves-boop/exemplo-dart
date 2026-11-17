@@ -1,0 +1,11 @@
+void main() {
+  String nome = "Leticia";
+  int idade = 18;
+  double altura = 1.85;
+  bool trabalha = false;
+
+  print("Nome: $nome");
+  print("Idade: $idade anos");
+  print("Altura: $altura m");
+  print("Trabalha: $trabalha");
+}
