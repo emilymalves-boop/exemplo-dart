@@ -1,0 +1,22 @@
+void main() {
+  String nome = "Emily";
+  int idade = 10;
+  double altura = 1.66;
+  bool estudante = true;
+
+  print("meu nome é $nome");
+  print("idade? $idade anos");
+  print("ano que vem terá ${idade + 1} ano");
+  print("altura: $altura m | estudante: $estudante");
+
+  nome = "joao";
+  print("segundo nome $nome");
+
+  conet pi = 3.14159;
+  final anoNascimento = 2011;
+
+  pi = 5;
+  anoNascimento = 2025;
+
+  print('$nome, $pi, $anoNascimento');
+}
