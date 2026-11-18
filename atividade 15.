@@ -1,0 +1,23 @@
+void main() {
+  int valor = 490;
+
+  if (valor <= 0 || valor % 10 != 0) {
+    print("Saque não é possível");
+  } else {
+    int notas100 = valor ~/ 100;
+    valor = valor % 100;
+
+    int notas50 = valor ~/ 50;
+    valor = valor % 50;
+
+    int notas20 = valor ~/ 20;
+    valor = valor % 20;
+
+    int notas10 = valor ~/ 10;
+
+    print("Notas de 100: $notas100");
+    print("Notas de 50: $notas50");
+    print("Notas de 20: $notas20");
+    print("Notas de 10: $notas10");
+  }
+}
