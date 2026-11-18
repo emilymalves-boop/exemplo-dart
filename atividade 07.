@@ -1,0 +1,11 @@
+void main() {
+  int numero = 4;
+
+  if (numero > 0) {
+    print("Positivo");
+  } else if (numero < 0) {
+    print("Negativo");
+  } else {
+    print("Zero");
+  }
+}
