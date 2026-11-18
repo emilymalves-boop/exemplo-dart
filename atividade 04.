@@ -1,9 +1,10 @@
 void main() {
-  double nota1 = 9.5;
-  double nota2 = 8.7;
-  double nota3 = 6.3;
+  int total = 200;
 
-  double media = (nota1 + nota2 + nota3) / 3;
 
-  print("Média: ${media.toStringAsFixed(1)}");
+  int horas = total ~/ 60;
+  int minutos = total % 60;
+
+
+  print("$horas h e $minutos min");
 }
