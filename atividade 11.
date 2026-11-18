@@ -1,0 +1,15 @@
+void main() {
+  int idade = 18;
+  bool estudante = true;
+
+  double ingresso = 40.00;
+  double valor;
+
+  if (idade < 12 || idade >= 60 || estudante) {
+    valor = ingresso / 2;
+  } else {
+    valor = ingresso;
+  }
+
+  print("Valor a pagar: R\$ ${valor.toStringAsFixed(2)}");
+}
