@@ -1,0 +1,28 @@
+class Aluno {
+  String nome;
+  String curso;
+  int idade;
+
+  Aluno(this.nome, this.curso, this.idade);
+
+  bool ehMaiorDeIdade() {
+    return idade >= 18;
+  }
+}
+
+void main() {
+  Aluno aluno1 = Aluno("Paula", "Desenvolvimento de Sistemas", 16);
+  Aluno aluno2 = Aluno("Mário", "Eletrotécnica", 18);
+
+  if (aluno1.ehMaiorDeIdade()) {
+    print("Paula é maior de idade");
+  } else {
+    print("Paula é menor de idade");
+  }
+
+  if (aluno2.ehMaiorDeIdade()) {
+    print("Mário é maior de idade");
+  } else {
+    print("Mário o é menor de idade");
+  }
+}
