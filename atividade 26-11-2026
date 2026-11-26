@@ -1,0 +1,15 @@
+class Aluno {
+  String nome;
+  String curso;
+  int idade;
+
+  Aluno(this.nome, this.curso, this.idade);
+}
+
+void main() {
+  Aluno aluno1 = Aluno("Paula", "Desenvolvimento de Sistemas", 16);
+  Aluno aluno2 = Aluno("Mário", "Eletrotécnica", 17);
+
+  print("${aluno1.nome}, ${aluno1.curso}");
+  print("${aluno2.nome}, ${aluno2.curso}");
+}
