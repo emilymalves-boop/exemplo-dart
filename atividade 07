@@ -1,0 +1,23 @@
+class Aluno {
+  String nome;
+  String curso;
+  int idade;
+
+  Aluno(this.nome, this.curso, this.idade);
+
+  void apresentar() {
+    print("Olá, eu sou $nome e estudo $curso.");
+  }
+}
+
+void main() {
+  List<Aluno> turma = [
+    Aluno("Carlos", "Desenvolvimento de Sistemas", 16),
+    Aluno("Daniela", "Desenvolvimento de Sistemas", 18),
+    Aluno("Elis", "Desenvolvimento de Sistemas", 17),
+  ];
+
+  for (Aluno aluno in turma) {
+    aluno.apresentar();
+  }
+}
