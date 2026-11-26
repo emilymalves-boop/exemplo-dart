@@ -1,0 +1,17 @@
+class Produto {
+  String nome;
+  double preco;
+  int quantidade;
+
+  Produto(this.nome, this.preco, this.quantidade);
+
+  double valorEmEstoque() {
+    return preco * quantidade;
+  }
+}
+
+void main() {
+  Produto produto = Produto("Caderno", 25.0, 4);
+
+  print("Valor em estoque: ${produto.valorEmEstoque()}");
+}
