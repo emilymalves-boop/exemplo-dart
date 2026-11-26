@@ -1,0 +1,28 @@
+class Celular {
+  String modelo;
+  int bateria;
+
+  Celular(this.modelo, this.bateria);
+
+  void carregar(int quantidade) {
+    bateria = bateria + quantidade;
+
+    if (bateria > 100) {
+      bateria = 100;
+    }
+  }
+
+  void mostrar() {
+    print("$modelo: $bateria% de bateria");
+  }
+}
+
+void main() {
+  Celular celular = Celular("Moto G", 40);
+
+  celular.carregar(30);
+  celular.mostrar();
+
+  celular.carregar(50);
+  celular.mostrar();
+}
