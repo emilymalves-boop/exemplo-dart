@@ -1,0 +1,39 @@
+class Aluno {
+  String nome;
+  String curso;
+  int idade;
+
+  Aluno(this.nome, this.curso, this.idade);
+
+  void apresentar() {
+    print("Olá, eu sou $nome e estudo $curso.");
+  }
+
+  bool ehMaiorDeIdade() {
+    return idade >= 18;
+  }
+}
+
+class Monitor extends Aluno {
+  String disciplina;
+
+  Monitor(String nome, String curso, int idade, this.disciplina)
+    : super(nome, curso, idade);
+
+  @override
+  void apresentar() {
+    print("Olá, eu sou $nome, estudo $curso e sou monitor de $disciplina.");
+  }
+}
+
+void main() {
+  Monitor monitor = Monitor(
+    "Fernanda",
+    "Desenvolvimento de Sistemas",
+    18,
+    "Lógica",
+  );
+
+  monitor.apresentar();
+  print(monitor.ehMaiorDeIdade());
+}
